@@ -1,0 +1,13 @@
+title 0.6: SPA new note
+
+note over browser:
+browser sends a new note with 
+Content-type: "application/json"
+and json looks like :
+{
+content: "it's christmas time my dudes",
+date: "2020-06-01T22:46:25.277Z"
+}
+end note
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: {"message":"note created"}
