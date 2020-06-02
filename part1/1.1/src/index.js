@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Content from './components/Content'
 import Header from './components/Header'
+import Content from './components/Content'
 import Total from './components/Total'
 
 const App = () => {
@@ -15,9 +15,9 @@ const App = () => {
 
   return (
     <div>
-      <Header course={course} />
-      <Content exercises={{exercises1, exercises2, exercises3}} parts={{part1, part2, part3}} />
-      <Total exercises={{exercises1, exercises2, exercises3}} />
+        <Header course={course}/>
+        <Content parts={{part1, part2, part3}} exercises={{exercises1, exercises2, exercises3}}/>
+        <Total exercises={{exercises1, exercises2, exercises3}}/>
     </div>
   )
 }
